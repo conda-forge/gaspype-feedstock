@@ -44,6 +44,7 @@ test:
     - tests/test_data/*.csv
   commands:
     - pip check
+    - rm tests/test_db_reader.py # Remove test that requires full repo
     - pytest
 
 about:
