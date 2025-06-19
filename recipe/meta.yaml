@@ -1,5 +1,5 @@
 {% set name = "gaspype" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d37e48e2490841c8e261778ea0dec66da704a1ee5728dad1e5bec629f8866edd
+  sha256: 12c1711f58afec4a3340a357cf037b7d6c9d7ab43434c22d6aa4c8844d4be6a6
 
 build:
   noarch: python
@@ -45,6 +45,7 @@ test:
   commands:
     - pip check
     - rm tests/test_db_reader.py # Remove test that requires full repo
+    - rm tests/test_doc_examples.py # Remove test that requires full repo
     - pytest
 
 about:
