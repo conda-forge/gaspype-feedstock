@@ -45,6 +45,7 @@ test:
   commands:
     - pip check
     - rm tests/test_db_reader.py # Remove test that requires full repo
+    - rm tests/test_doc_examples.py # Remove test that requires full repo
     - pytest
 
 about:
