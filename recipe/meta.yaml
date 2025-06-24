@@ -1,5 +1,5 @@
 {% set name = "gaspype" %}
-{% set version = "1.1.1" %}
+{% set version = "1.1.2" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 12c1711f58afec4a3340a357cf037b7d6c9d7ab43434c22d6aa4c8844d4be6a6
+  sha256: 74da86c34b6c71930c182c3177f3cf35bb93d5deae9175ba3a7c4c3f45645f1c
 
 build:
   noarch: python
