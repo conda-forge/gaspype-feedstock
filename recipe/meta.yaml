@@ -1,5 +1,5 @@
 {% set name = "gaspype" %}
-{% set version = "1.1.6" %}
+{% set version = "1.1.7" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e3cb1be50acf65ff12b130f31e591dbc9b93fc94d0c231d2e09d907a47050663
+  sha256: 32ad30f69d7d486031696907ee76bb1d7ff6d6417802f2961f736d0cd9aa31c1
 
 build:
   noarch: python
